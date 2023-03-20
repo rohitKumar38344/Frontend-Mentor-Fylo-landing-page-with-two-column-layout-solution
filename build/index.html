@@ -41,13 +41,15 @@
   </head>
   <body class="2xl font-Open-Sans">
     <!-- Header Section -->
-    <header class="flex flex-col py-8 px-12 font-Raleway lg:mb-16">
-      <div class="mb-4 flex justify-center">
+    <header
+      class="flex flex-col py-8 px-12 font-Raleway sm:flex-row sm:justify-between lg:mb-16"
+    >
+      <div class="mb-4 flex justify-center sm:justify-start">
         <img src="images/logo.svg" class="w-1/2" />
       </div>
       <!-- Header Navigation -->
       <nav>
-        <ul class="flex flex-col items-center gap-5">
+        <ul class="flex flex-col items-center gap-5 sm:flex-row">
           <li><a href="">Features</a></li>
           <li><a href=""></a>Team</li>
           <li><a href=""></a>Sign In</li>
@@ -56,11 +58,13 @@
     </header>
     <main>
       <!-- Call To Action Section -->
-      <div class="grid-rows-[40%, 1fr] mb-32 grid gap-12 px-8 lg:gap-12">
+      <div
+        class="grid-rows-[40%, 1fr] mb-32 grid gap-12 px-8 sm:grid-cols-2 sm:grid-rows-none lg:gap-12"
+      >
         <!-- CTA Left Section -->
-        <div class="order-last flex flex-col gap-8">
+        <div class="order-last flex flex-col gap-8 sm:order-none">
           <h1
-            class="text-center font-Raleway text-xl font-bold text-fylo-dark-blue lg:text-4xl"
+            class="text-center font-Raleway text-xl font-bold text-fylo-dark-blue lg:text-start lg:text-4xl"
           >
             All your files in one secure location, accessible anywhere.
           </h1>
@@ -70,7 +74,7 @@
             and co-workers.
           </p>
           <!-- CTA Form -->
-          <form action="" class="flex flex-col gap-4">
+          <form action="" class="flex flex-col gap-4 lg:flex-row">
             <input
               type="email"
               name=""
@@ -86,15 +90,15 @@
           </form>
         </div>
         <!-- CTA Right Section -->
-        <div class="self-end">
+        <div class="self-end sm:self-center">
           <img src="images/illustration-1.svg " width="600" height="500" />
         </div>
       </div>
       <!-- How Fylo Works Section -->
       <section
-        class="mb-24 grid grid-rows-[40%,1fr] bg-mobile-curve-pattern bg-no-repeat px-8 pt-20 md:grid-cols-2"
+        class="grid-rows-[40%, 1fr] mb-24 grid bg-mobile-curve-pattern bg-no-repeat px-8 sm:grid-cols-2"
       >
-        <div class="order-last flex flex-col gap-2">
+        <div class="order-last flex flex-col gap-2 sm:order-none">
           <div class="flex flex-col gap-6">
             <h2
               class="font-Raleway text-lg font-bold text-fylo-dark-blue lg:text-4xl"
@@ -109,7 +113,9 @@
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required!
             </p>
-            <div class="m-auto mb-6 w-fit border-b-2 border-green-500 text-sm">
+            <div
+              class="m-auto mb-6 w-fit border-b-2 border-green-500 text-sm md:mx-0"
+            >
               <a href="#" class="visited: text-fylo-md-cyan">
                 See how Fylo works
                 <img src="images/icon-arrow.svg" class="ml-2 inline-block"
@@ -117,7 +123,7 @@
             </div>
           </div>
           <!-- Testimonial Section -->
-          <div class="flex flex-col gap-4 rounded-lg p-4 shadow-md">
+          <div class="flex flex-col gap-4 rounded-lg p-4 shadow-md lg:w-3/5">
             <img src="images/icon-quotes.svg" alt="" width="20" height="20" />
             <blockquote>
               <p class="text-sm text-fylo-dark-blue">
@@ -143,35 +149,37 @@
             </div>
           </div>
         </div>
-        <div><img src="./images/illustration-2.svg"</div>
+        <div class="self-center"><img src="./images/illustration-2.svg" /></div>
       </section>
       <!-- Product Early Access Section -->
       <section class="bg-fylo-desaturated-blue">
         <div
-          class="grid grid-rows-2 gap-9 p-2 lg:m-auto lg:h-80 lg:w-10/12 lg:grid-cols-2 lg:items-center"
+          class="grid grid-rows-2 gap-9 p-2 sm:grid-cols-2 sm:grid-rows-none md:p-8 lg:h-80 lg:grid-cols-2 lg:items-center"
         >
           <div class="flex flex-col gap-5 text-white lg:w-9/12">
-            <h3 class="text-center font-Raleway text-xl font-bold">
+            <h3
+              class="text-center font-Raleway text-2xl font-bold sm:text-start"
+            >
               Get early access today
             </h3>
-            <p class="text-sm">
+            <p class="text-sm lg:text-base">
               It only takes a minute to sign up and our free starter tier is
               extremely generous. If you have any questions, our support team
               would be happy to help you.
             </p>
           </div>
-          <div>
+          <div class="self-center lg:items-center">
             <form action="" class="flex flex-col gap-5 font-Raleway">
               <input
                 type="email"
                 name=""
                 id=""
-                class="w-full rounded-md p-2 outline-2 outline-gray-700 focus:outline-none lg:w-2/3"
+                class="w-full rounded-sm p-2 outline-2 outline-gray-700 focus:outline-none lg:w-10/12"
               />
               <input
                 type="submit"
                 value="Get Started For Free"
-                class="w-full self-start rounded-md bg-fylo-bright-blue px-4 py-3 text-xs font-bold text-white"
+                class="w-full self-start rounded-sm bg-fylo-bright-blue px-4 py-3 text-xs font-bold text-white md:w-fit"
               />
             </form>
           </div>
@@ -180,7 +188,9 @@
     </main>
     <footer class="bg-fylo-dark-blue text-white">
       <!-- <div class="flex justify-between p-12"> -->
-      <div class="flex flex-col gap-10 p-12 md:grid-cols-2">
+      <div
+        class="flex flex-col gap-10 p-12 md:grid-cols-2 lg:flex-row lg:justify-between lg:gap-0"
+      >
         <div class="flex flex-col gap-4">
           <div>
             <img src="images/logo-white.svg" class="w-28" />
@@ -194,7 +204,9 @@
             <p>example@fylo.com</p>
           </div>
         </div>
-        <div class="flex flex-col gap-10 md:items-start md:justify-between">
+        <div
+          class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between lg:gap-32"
+        >
           <ul class="flex flex-col gap-2">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Jobs</a></li>
@@ -233,7 +245,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Rohit Kumar</a>.
       </p>
     </div>
   </body>
