@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](build/images/screenshot.jpeg)
+![output screenshot](/build/images/screenshot.jpeg)
 
 ### Links
 
-- Solution URL: [github repo](https://your-solution-url.com)
-- Live Site URL: [live](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/rohitKumar38344/Frontend-Mentor-Fylo-landing-page-with-two-column-layout-solution)
+- Live Site URL: [live](https://quiet-genie-2a4cf2.netlify.app/)
 
 ## My process
 
